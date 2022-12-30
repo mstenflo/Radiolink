@@ -10,16 +10,16 @@ client.on('connect', function () {
   })
 })
 
-// document.querySelector('#kgnu').addEventListener('mousedown', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
-document.querySelector('#paradise').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#krcc').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#kusf').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#wfmu').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swissclassic').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swissjazz').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swisspop').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// // document.querySelector('#kgnu').addEventListener('mousedown', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
+// document.querySelector('#paradise').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#krcc').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#kusf').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#wfmu').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#swissclassic').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#swissjazz').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#swisspop').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+// document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 
 document.querySelector('#kgnu').addEventListener('touchend', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
 document.querySelector('#paradise').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
@@ -33,5 +33,6 @@ document.querySelector('#deepspace').addEventListener('touchstart', function(eve
 document.querySelector('#dronezone').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 
 function buttonPress(station) {
+  console.log(station);
   client.publish('stenflo/radiolink', station.toString());
 }

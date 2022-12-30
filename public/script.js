@@ -10,7 +10,7 @@ client.on('connect', function () {
   })
 })
 
-document.querySelector('#kgnu').addEventListener('mousedown', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
+// document.querySelector('#kgnu').addEventListener('mousedown', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
 document.querySelector('#paradise').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#krcc').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#kusf').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
@@ -21,7 +21,7 @@ document.querySelector('#swisspop').addEventListener('click', function(event) {b
 document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 
-document.querySelector('#kgnu').addEventListener('touchstart', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
+document.querySelector('#kgnu').addEventListener('touchend', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
 document.querySelector('#paradise').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#krcc').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#kusf').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})

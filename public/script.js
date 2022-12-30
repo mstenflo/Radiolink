@@ -33,7 +33,9 @@ document.querySelector('#deepspace').addEventListener('touchstart', buttonPress)
 document.querySelector('#dronezone').addEventListener('touchstart', buttonPress)
 
 function buttonPress(e) {
-  console.log(e);
+  e.preventdefault();
+  // console.log(e);
   console.log(e.path[0].id);
+  document.getElementById(e.path[0].id).innerHTML = "touched"
   client.publish('stenflo/radiolink', e.path[0].id.toString());
 }

@@ -1,0 +1,23 @@
+{
+  "name": "radiolink_js",
+  "version": "1.0.0",
+  "description": "Simple website that sends websocket messages through MQTT protocol to control an internet radio playing through an ESP32, using a VS1053 audio decoder. Pressing the buttons publishes a message over MQTT with the name of the radio station, the ESP32 subscribes to that topic and responds accordingly.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstenflo/Radiolink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstenflo/Radiolink/issues"
+  },
+  "homepage": "https://github.com/mstenflo/Radiolink#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -10,7 +10,7 @@ client.on('connect', function () {
   })
 })
 
-document.querySelector('#kgnu').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#kgnu').addEventListener('click', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
 document.querySelector('#paradise').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#krcc').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#kusf').addEventListener('click', function(event) {buttonPress(event.path[0].id);})

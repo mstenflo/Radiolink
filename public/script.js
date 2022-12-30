@@ -21,6 +21,17 @@ document.querySelector('#swisspop').addEventListener('click', function(event) {b
 document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 
+document.querySelector('#kgnu').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#paradise').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#krcc').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#kusf').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#wfmu').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#swissclassic').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#swissjazz').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#swisspop').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#deepspace').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#dronezone').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+
 function buttonPress(station) {
   client.publish('stenflo/radiolink', station.toString());
 }

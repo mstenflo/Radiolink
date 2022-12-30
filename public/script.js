@@ -21,7 +21,7 @@ client.on('connect', function () {
 // document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 // document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 
-document.querySelector('#kgnu').addEventListener('touchend', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
+document.querySelector('#kgnu').addEventListener('touchend', buttonPress)
 document.querySelector('#paradise').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#krcc').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#kusf').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
@@ -32,7 +32,8 @@ document.querySelector('#swisspop').addEventListener('touchstart', function(even
 document.querySelector('#deepspace').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 document.querySelector('#dronezone').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
 
-function buttonPress(station) {
-  console.log(station);
-  client.publish('stenflo/radiolink', station.toString());
+function buttonPress(e) {
+  console.log(e);
+  console.log(e.path[0].id);
+  client.publish('stenflo/radiolink', e.path[0].id.toString());
 }

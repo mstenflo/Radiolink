@@ -21,16 +21,16 @@ client.on('connect', function () {
 // document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 // document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
 
-document.querySelector('#kgnu').addEventListener('touchend', buttonPress)
-document.querySelector('#paradise').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#krcc').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#kusf').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#wfmu').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swissclassic').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swissjazz').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#swisspop').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#deepspace').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
-document.querySelector('#dronezone').addEventListener('touchstart', function(event) {buttonPress(event.path[0].id);})
+document.querySelector('#kgnu').addEventListener('touchstart', buttonPress)
+document.querySelector('#paradise').addEventListener('touchstart', buttonPress)
+document.querySelector('#krcc').addEventListener('touchstart', buttonPress)
+document.querySelector('#kusf').addEventListener('touchstart', buttonPress)
+document.querySelector('#wfmu').addEventListener('touchstart', buttonPress)
+document.querySelector('#swissclassic').addEventListener('touchstart', buttonPress)
+document.querySelector('#swissjazz').addEventListener('touchstart', buttonPress)
+document.querySelector('#swisspop').addEventListener('touchstart', buttonPress)
+document.querySelector('#deepspace').addEventListener('touchstart', buttonPress)
+document.querySelector('#dronezone').addEventListener('touchstart', buttonPress)
 
 function buttonPress(e) {
   console.log(e);

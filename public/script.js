@@ -35,7 +35,7 @@ document.querySelector('#dronezone').addEventListener('touchstart', buttonPress)
 function buttonPress(e) {
   // e.preventDefault();
   // console.log(e);
-  console.log(e.path[0].id);
+  // console.log(e.path[0].id);
   document.getElementById(e.path[0].id).innerHTML = "touched"
   client.publish('stenflo/radiolink', e.path[0].id.toString());
 }

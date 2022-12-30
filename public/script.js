@@ -10,17 +10,6 @@ client.on('connect', function () {
   })
 })
 
-// // document.querySelector('#kgnu').addEventListener('mousedown', function(event) {event.preventDefault(); buttonPress(event.path[0].id);})
-// document.querySelector('#paradise').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#krcc').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#kusf').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#wfmu').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#swissclassic').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#swissjazz').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#swisspop').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#deepspace').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-// document.querySelector('#dronezone').addEventListener('click', function(event) {buttonPress(event.path[0].id);})
-
 document.querySelector('#kgnu').addEventListener('touchstart', buttonPress)
 document.querySelector('#paradise').addEventListener('touchstart', buttonPress)
 document.querySelector('#krcc').addEventListener('touchstart', buttonPress)
@@ -33,9 +22,5 @@ document.querySelector('#deepspace').addEventListener('touchstart', buttonPress)
 document.querySelector('#dronezone').addEventListener('touchstart', buttonPress)
 
 function buttonPress(e) {
-  // e.preventDefault();
-  // console.log(e);
-  // console.log(e.path[0].id);
-  document.getElementById(e.target.id).innerHTML = "touched"
   client.publish('stenflo/radiolink', e.target.id.toString());
 }

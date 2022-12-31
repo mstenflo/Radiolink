@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.js" integrity="sha512-yX4jaiU9Ai9dzaimFoTq+tQYOrAMNP+EWiiUVsru3ypsAi76c0zCPBfxKagLkKjC4ZeLMEQTa7aE7CtjTmlgDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,23 +18,56 @@
   </head>
   <body>
     <div class="p-3">
-      <nav>
-        <h3 class="brand">RadioLink</h3>
-        <img src="../android-chrome-192x192.png" alt="logo">
+      <nav class="d-flex">
+        <img class="align-self-start" src="/logo.png" alt="logo" height="45px">
+        <h3 class="brand mx-3 align-self-end">RadioLink</h3>
       </nav>
     </div>
-    <div class="container text-center text-bg-warning">
-      <button type="button" class="btn btn-secondary m-3" id="kgnu">KGNU</button>
-      <button type="button" class="btn btn-secondary m-3" id="paradise">Radio Paradise</button>
-      <button type="button" class="btn btn-secondary m-3" id="krcc">KRCC</button>
-      <button type="button" class="btn btn-secondary m-3" id="kusf">KUSF</button>
-      <button type="button" class="btn btn-secondary m-3" id="wfmu">WFMU</button>
-      <button type="button" class="btn btn-secondary m-3" id="swissclassic">Swiss Classic</button>
-      <button type="button" class="btn btn-secondary m-3" id="swissjazz">Swiss Jazz</button>
-      <button type="button" class="btn btn-secondary m-3" id="swisspop">Swiss Pop</button>
-      <button type="button" class="btn btn-secondary m-3" id="deepspace">Deep Space One</button>
-      <button type="button" class="btn btn-secondary m-3" id="dronezone">Drone Zone</button>
+    <div class="text-center d-flex flex-wrap main justify-content-between">
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3 align-self-center" id="kgnu"></button>
+        <p>KGNU</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3 align-self-center" id="paradise"></button>
+        <p>Radio Paradise</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="krcc"></button>
+        <p>KRCC</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="kusf"></button>
+        <p>KUSF</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="wfmu"></button>
+        <p>WFMU</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="swissclassic"></button>
+        <p>Swiss Classic</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="swissjazz"></button>
+        <p>Swiss Jazz</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="swisspop"></button>
+        <p>Swiss Pop</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="deepspace"></button>
+        <p>Deep Space One</p>
+      </div>
+      <div class="d-flex flex-column px-3">
+        <button type="button" class="btn btn-secondary m-3" id="dronezone"></button>
+        <p>Drone Zone</p>
+      </div>
     </div>
+    <footer>
+      <img src="/guitar.png" alt="acousticGuitar" width="100%" class="guitar">
+    </footer>
   </body>
   
   <script src="./script.js"></script>

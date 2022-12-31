@@ -20,6 +20,7 @@ document.querySelector('#swissjazz').addEventListener('touchstart', buttonPress)
 document.querySelector('#swisspop').addEventListener('touchstart', buttonPress)
 document.querySelector('#deepspace').addEventListener('touchstart', buttonPress)
 document.querySelector('#dronezone').addEventListener('touchstart', buttonPress)
+document.querySelector('#stop').addEventListener('touchstart', buttonPress)
 
 document.querySelector('#kgnu').addEventListener('click', buttonPress)
 document.querySelector('#paradise').addEventListener('click', buttonPress)
@@ -31,6 +32,7 @@ document.querySelector('#swissjazz').addEventListener('click', buttonPress)
 document.querySelector('#swisspop').addEventListener('click', buttonPress)
 document.querySelector('#deepspace').addEventListener('click', buttonPress)
 document.querySelector('#dronezone').addEventListener('click', buttonPress)
+document.querySelector('#stop').addEventListener('click', buttonPress)
 
 function buttonPress(e) {
   console.log(e.target.id.toString());
